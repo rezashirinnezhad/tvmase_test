@@ -8,8 +8,8 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
 import test.reza.tvmaze.model.Show;
 
 /**
- * Class to implement make TVmaze Requests based on Services defined in TVmazeApi intenface
- *
+ * Class to implement make TVmaze Requests
+ * on Services defined in TVmazeApi intenface
  */
 
 public class TVmazeRequest {
@@ -36,9 +36,9 @@ public class TVmazeRequest {
 
 
     /**
-     * Method to make get all of shows existing in TV maze database
-     * It returns a list of shows
-     * Deserialization is done by Jackson
+     * Method to make get all of shows existing in
+     * TVmaze database It returns a list of shows ,
+     * deserialization is done by Jackson
      */
     public List<Show> getAllShows(){
 

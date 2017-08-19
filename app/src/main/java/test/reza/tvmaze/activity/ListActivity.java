@@ -23,6 +23,12 @@ import test.reza.tvmaze.adapter.ShowsAdapter;
 import test.reza.tvmaze.model.Show;
 import test.reza.tvmaze.rest.TVmazeRequest;
 
+
+/**
+ * Actualy main activity which expose
+ * all fetched Shows from TVmaze database
+ * as a two columned recyclerview in cardviews
+ */
 public class ListActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -63,6 +69,7 @@ public class ListActivity extends AppCompatActivity
     }
 
 
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -71,9 +78,16 @@ public class ListActivity extends AppCompatActivity
                     new GetShows().execute();
     }
 
+    /**
+     * AsyncTask class which handle duty of fetching data from server
+     * and gives results as a list to Adapter
+     */
     public class GetShows extends AsyncTask {
         private SpotsDialog progressBar;
 
+        /**
+         * on pre execution a progress bar is shown
+         */
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -81,13 +95,26 @@ public class ListActivity extends AppCompatActivity
             progressBar = new SpotsDialog(ListActivity.this, R.style.CustomDialog);
             progressBar.setCancelable(false);
             progressBar.show();
-
         }
+
+
+        /**
+         * in background thread fetching data is done
+         * and result as an object is returned
+         * @param params
+         * @return
+         */
         @Override
         protected Object doInBackground(Object[] params) {
             return new TVmazeRequest().getAllShows();
         }
 
+        /**
+         * on post  execution list of Shows which was returned
+         * as an object in doInBackground method is given
+         * and proper result based on the object is displayed
+         * @param shows
+         */
         @Override
         protected void onPostExecute(Object shows) {
             super.onPostExecute(shows);

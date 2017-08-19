@@ -28,7 +28,11 @@ public class ShowsAdapter extends RecyclerView.Adapter<ShowsAdapter.ShowsVH> {
     Context context;
     List<Show> shows;
 
-
+    /**
+     * Initializing adapter by its constructor
+     * @param context
+     * @param shows
+     */
     public ShowsAdapter(Context context, List<Show> shows){
         this.context = context;
         this.shows = shows;
@@ -93,7 +97,9 @@ public class ShowsAdapter extends RecyclerView.Adapter<ShowsAdapter.ShowsVH> {
         return shows.size();
     }
 
-
+    /**
+     * View holder of adapter
+     */
     public class ShowsVH extends RecyclerView.ViewHolder {
 
         CardView card;
@@ -101,6 +107,10 @@ public class ShowsAdapter extends RecyclerView.Adapter<ShowsAdapter.ShowsVH> {
         RatingBar rating;
         ImageView poster;
 
+        /**
+         *  Initializing  properties in constructor
+         * @param view
+         */
         public ShowsVH(View view) {
             super(view);
 

@@ -12,6 +12,8 @@ import test.reza.tvmaze.R;
 
 /**
  * Activity to handle connection lost situations
+ * a dialog style activity with a message and
+ * a try again button is shown to user
  */
 public class ConnectionLostActivity extends Activity {
 

@@ -18,6 +18,10 @@ import com.bumptech.glide.request.RequestOptions;
 import test.reza.tvmaze.R;
 import test.reza.tvmaze.model.Show;
 
+/**
+ * Activity to display more details of a selected show
+ * in ListActivity
+ */
 public class ShowDetailsActivity extends AppCompatActivity {
 
     /**

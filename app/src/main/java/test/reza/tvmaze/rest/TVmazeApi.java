@@ -6,17 +6,13 @@ import retrofit2.http.GET;
 import test.reza.tvmaze.model.Show;
 
 /**
- * Created by Reza on 8/17/2017.
+ * Interface that should be created to use Retrofit
  */
-
 public interface TVmazeApi {
 
     /**
-     *
-     * Method to
+     * Method to get Shows from specified url
      */
-
     @GET("/shows")
     Call<List<Show>> getAllShows();
-
 }
