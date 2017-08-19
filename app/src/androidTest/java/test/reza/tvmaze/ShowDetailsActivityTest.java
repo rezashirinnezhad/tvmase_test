@@ -33,6 +33,6 @@ public class ShowDetailsActivityTest {
             new ActivityTestRule<>(ShowDetailsActivity.class);
     @Test
     public void isBackButtonOnClickPerfom(){
-     //   Espresso.onView(withId(R.id.)).check(matches(isDisplayed()));
+        Espresso.onView(withId(R.id.thumbnail_poster)).check(matches(isDisplayed()));
     }
 }
