@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="test.reza.tvmaze.activity.ShowDetailsActivity"
+    tools:showIn="@layout/activity_show_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+                            <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/colorAccent"
+                                    android:orientation="vertical"
+                                    android:elevation="2dp">
+                                <TextView
+                                    android:id="@+id/title"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="@dimen/text_margin"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:textSize="25sp"/>
+                                <TextView
+                                    android:id="@+id/rating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/text_margin"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white" />
+                                <TextView
+                                    android:id="@+id/genres"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/text_margin"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"/>
+                                <TextView
+                                    android:id="@+id/runtime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/text_margin"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"/>
+
+                                <TextView
+                                    android:id="@+id/schedule"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/text_margin"
+                                    android:layout_marginBottom="@dimen/text_margin"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/white"/>
+                             </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/colorPrimaryDark"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"
+                                    android:layout_margin="@dimen/text_margin">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_info"/>
+                                     <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:id="@+id/summary"
+                                        android:textSize="18sp"
+                                        android:textColor="@color/white"
+                                        android:layout_marginLeft="10dp"
+                                        android:textStyle="italic"/>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/text_margin"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:src="@drawable/ic_website"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/site"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center"
+                                    android:autoLink="web"/>
+                                </LinearLayout>
+
+                            </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

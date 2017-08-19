@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TVmaze</string>
+    <string name="title_show_details">Show Details</string>
+    <string name="action_settings">Search</string>
+    <string name="title_activity_list">Popcorn Time</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="no_connection">There was a problem with connection</string>
+    <string name="try_connect">Try Again</string>
+</resources>
+
